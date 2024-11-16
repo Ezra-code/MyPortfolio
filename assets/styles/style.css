@@ -303,6 +303,7 @@ section .title::after {
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
+    text-align: center;
 }
 .team .carousel .card:hover{
     background: crimson;
@@ -335,8 +336,26 @@ section .title::after {
 .team .carousel .card:hover img{
     border-color: #fff;
 }
-
-
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active
+.owl-dot:hover{
+    background: crimson;
+}
 /*responsive media queries*/
 @media(max-width: 1300px){
     .home .max-width{
@@ -355,6 +374,9 @@ section .title::after {
     }
 }
 @media(max-width: 947px) {
+    .max-width{
+        padding: 0 50px;
+    }
     .menu-btn{
         display: block;
         z-index: 999;
@@ -373,7 +395,7 @@ section .title::after {
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    navbar .menu.active{
+    .navbar .menu.active{
         left: 0;
     }
     .navbar .menu li{
