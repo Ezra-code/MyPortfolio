@@ -12,6 +12,8 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active")
     })
 
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
     //owlcarousel
     $('.carousel').owlCarousel({
         margein: 20,

@@ -77,10 +77,22 @@ html{
     color: #fff;
     min-height: 500px;
     font-family: sans-serif;
+    justify-content: space-evenly;
 }
 
 .home .max-width{
     margin: auto 0 auto 40px;
+  
+}
+.home .image{
+    /* border: 2px solid crimson; */
+    height:800px;
+    width: 35%;
+}
+.home>.image>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 .home .home-content .text-1{
     font-size: 27px;
@@ -118,7 +130,7 @@ html{
 section{
     padding: 100px 0;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .projects, .contact, footer{
     font-family: sans-serif;
 }
 
@@ -203,16 +215,16 @@ section .title::after {
     background: none;
 }
 /*services*/
-.services, .team{
+.services, .projects{
     color: #fff;
     background: #111;
 }
-.services .title::before
-.team .title::before{
+.services .title::before,
+.projects .title::before{
     background: #fff;
 }
-.services .title::after
-.team .title::after{
+.services .title::after,
+.projects .title::after{
     background:#111;
     content: "what i do"
 }
@@ -242,8 +254,18 @@ section .title::after {
     color: #fff;
 }
 /*skills*/
+.skills{
+    background: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+.skills .title::before{
+    background: #fff;
+}
 .skills .title::after{
     content: "what i know";
+    
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -254,92 +276,141 @@ section .title::after {
     margin-bottom: 10px;
 }
 .skills .skills-content .left p{
-    text-align: justify; 
+    text-align: justify;
+    color: #000;
 }
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
+.skills .skills-content .right .skills-icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
 }
-.skills .skills-content .info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: " ";
-    position: absolute;
-    height: 100%;  
-    left: 0;
-    right: 0;
-    background: crimson;
-
-}
-.skills .skills-content .right .html::before{
-    width: 90%;
-}
-.skills .skills-content .right .css::before{
-    width: 75%;
-}
-.skills .skills-content .right .js::before{
-    width: 60%;
-}
-.skills .skills-content .right .php::before{
-    width: 55%;
-}
-.skills .skills-content .right .mysql::before{
-    width: 70%;
-}
-
-/*team*/
-.team .title::after{
-    background: #111;
-    content: "who's with me ";
-}
-.team .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-}
-.team .carousel .card:hover{
-    background: crimson;
-    cursor: pointer;
-}
-.team .carousel .card .box{
+.skills .skills-content .right .skill-card{
+    background: #1e1e1e;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 22px 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #2a2a2a;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
-.team .carousel .card:hover .box{
-    transform: scale(1.05);
+.skills .skills-content .right .skill-card:hover{
+    background: crimson;
+    border-color: crimson;
+    transform: translateY(-4px);
 }
-.team .carousel .card .text{
-    font-size: 25px;
+.skills .skills-content .right .skill-card i{
+    font-size: 42px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .right .skill-card .devicon-nextjs-plain,
+.skills .skills-content .right .skill-card .devicon-github-original{
+    color: #fff;
+}
+.skills .skills-content .right .skill-card:hover i{
+    color: #fff !important;
+}
+.skills .skills-content .right .skill-card .skill-icon-ai{
+    color: #00d4ff;
+}
+.skills .skills-content .right .skill-card .skill-icon-rag{
+    color: #a855f7;
+}
+.skills .skills-content .right .skill-card span{
+    font-size: 12px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
+    color: #ccc;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
-.team .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
+.skills .skills-content .right .skill-card:hover span{
+    color: #fff;
+}
 
+/*projects*/
+.projects-group-label{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: crimson;
+    margin: 40px 0 18px;
+    padding-left: 4px;
+    border-left: 3px solid crimson;
+    padding-left: 10px;
 }
-.team .carousel .card:hover img{
+.projects-group-label:first-of-type{
+    margin-top: 0;
+}
+
+.projects .title::after{
+    background: #111;
+    content: "what i built";
+}
+.projects .projects-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.project-card{
+    background: #222;
+    border-radius: 8px;
+    padding: 30px 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid #2a2a2a;
+}
+.project-card:hover{
+    background: crimson;
+    border-color: crimson;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.project-card .project-icon i{
+    font-size: 40px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.project-card:hover .project-icon i{
+    color: #fff;
+}
+.project-card .project-title{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.project-card .project-tech{
+    font-size: 13px;
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+.project-card:hover .project-tech{
+    color: #ffd5d5;
+}
+.project-card .project-link{
+    margin-top: 8px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid crimson;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.project-card:hover .project-link{
+    background: #fff;
     border-color: #fff;
+    color: crimson;
 }
 .owl-dots{
     text-align: center;
@@ -467,10 +538,14 @@ footer{
     background: #111;
     padding: 20px 23px;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 footer span a{
     color: crimson;
     text-decoration: none;
+    text-align: center;
 
 }
 footer span a:hover{
@@ -544,10 +619,16 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .projects .projects-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 25px;
+    }
+    .skills .skills-content .right .skills-icons{
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -567,6 +648,12 @@ footer span a:hover{
     .services .serv-content .card,
     .skills .skills-content .column{
         width: 100%;
+    }
+    .projects .projects-grid{
+        grid-template-columns: 1fr;
+    }
+    .skills .skills-content .right .skills-icons{
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }

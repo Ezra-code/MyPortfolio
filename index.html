@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <script
       src="https://kit.fontawesome.com/f685c0da81.js"
       crossorigin="anonymous"
@@ -33,7 +34,7 @@
           <li><a href="#About_me">About</a></li>
           <li><a href="#Services">Services</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#myTeam">Teams</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <div class="menu-btn">
@@ -52,6 +53,9 @@
           <a href="#">Hire me</a>
         </div>
       </div>
+      <div class="image">
+        <img src="./assets/images/potrait.png" alt="" />
+      </div>
     </section>
 
     <!--about section-->
@@ -61,7 +65,7 @@
         <h2 class="title">About me</h2>
         <div class="about-content">
           <div class="column left">
-            <img src="./assets/images/me.jpg" alt="" />
+            <img src="./assets/images/potrait.JPG" alt="" />
           </div>
 
           <div class="column right">
@@ -69,13 +73,19 @@
               I'm Ezra Njeru and i am a <span>Developer</span>
             </div>
             <p>
-              As a recent graduate from Zetech University with a Bachelor of
-              Science in Information Technology, I am extremely interested in
-              any opportunity related to ICT and/or Software Development. I am
-              confident that I am well-prepared to be a valuable contributor to
-              your company's growth and success.
+              Backend-leaning Full Stack Developer with 2+ years building
+              scalable web applications using Node.js/Express, TypeScript, and
+              SQL/NoSQL databases. I design and integrate secure REST APIs,
+              authentication (JWT, RBAC), and high-performance data flows;
+              containerize services with Docker; and automate CI/CD with GitHub
+              Actions. My work has delivered measurable outcomes — 12%
+              conversion lift, 40% faster TTFB, 30% faster FCP, and 22% fewer
+              checkout errors — backed by rigorous testing (Jest, Cypress) and
+              observability (Sentry). I hold a BSc in Information Technology
+              from Zetech University and am committed to clean code, performance,
+              and maintainable systems.
             </p>
-            <a href="./assets/images/CURRICULUM VITAE ezra.docx.pdf" download
+            <a href="./assets/images/CV.pdf" download
               >Download CV</a
             >
           </div>
@@ -92,32 +102,36 @@
           <div class="card">
             <div class="box">
               <i class="fas fa-paint-brush"></i>
-              <div class="text">web design</div>
+              <div class="text">Web Development</div>
               <p>
-                I have studied web development at Moringa school. i am able to
-                develop websites using ReactJs HTML and CSS for frontend am also
-                able to build the backend using Ruby on RAILS. I also have some
-                knowledge in PHP and Python programming languages
+                Building responsive, accessible frontends with React, Next.js,
+                and TypeScript — from design systems and reusable component
+                libraries to performance-optimised UIs with strong Core Web
+                Vitals and 95+ Lighthouse scores.
               </p>
             </div>
           </div>
           <div class="card">
             <div class="box">
-              <i class="fas fa-camera"></i>
-              <div class="text">Videography</div>
+              <i class="fas fa-sitemap"></i>
+              <div class="text">System Design</div>
               <p>
-                Currently working with a small but upcoming production called
-                sealife production as their director of photography i also
-                double up as their editor
+                Designing scalable, maintainable architectures — REST API
+                contracts, authentication flows (JWT, RBAC), CI/CD pipelines
+                with GitHub Actions, and containerised services with Docker for
+                reliable, production-ready systems.
               </p>
             </div>
           </div>
           <div class="card">
             <div class="box">
-              <i class="fas fa-code"></i>
-              <div class="text">App design</div>
+              <i class="fas fa-server"></i>
+              <div class="text">Backend Development</div>
               <p>
-                Currently studying react native to build mobile applications
+                Building secure, high-performance backends with Node.js/Express
+                and TypeScript, integrating SQL/NoSQL databases, and
+                implementing observability with Sentry and performance budgets
+                to keep services fast and stable.
               </p>
             </div>
           </div>
@@ -131,88 +145,176 @@
         <h2 class="title">My Skills</h2>
         <div class="skills-content">
           <div class="column left">
-            <div class="text">Creative skills and Experiences</div>
+            <div class="text">Technical Skills and Experience</div>
             <p>
-              I have been able to study information technology back in
-              university and i have ventured into networking by studying cisco
-              and huawei network cerifications i later grew the interest of
-              software development and thus leading me to join Moringa school
-              one of the best software development and data Science bootcamp in
-              Kenya
+              With a BSc in Information Technology from Zetech University and
+              intensive training at Moringa School, I have 2+ years of
+              professional experience building full-stack web applications.
+              My core focus is backend-leaning full-stack development —
+              delivering scalable APIs, robust authentication, and
+              high-performance frontends with measurable results across
+              multiple production projects.
             </p>
           </div>
           <div class="column right">
-            <div class="bars">
-              <div class="info">
+            <div class="skills-icons">
+              <div class="skill-card">
+                <i class="devicon-html5-plain colored"></i>
                 <span>HTML</span>
-                <span>90%</span>
               </div>
-              <div class="line html"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
+              <div class="skill-card">
+                <i class="devicon-css3-plain colored"></i>
                 <span>CSS</span>
-                <span>75%</span>
               </div>
-              <div class="line css"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
+              <div class="skill-card">
+                <i class="devicon-javascript-plain colored"></i>
                 <span>JavaScript</span>
-                <span>70%</span>
               </div>
-              <div class="line js"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span>React</span>
-                <span>70%</span>
+              <div class="skill-card">
+                <i class="devicon-typescript-plain colored"></i>
+                <span>TypeScript</span>
               </div>
-              <div class="line js"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
+              <div class="skill-card">
+                <i class="devicon-react-original colored"></i>
+                <span>React JS</span>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-nextjs-plain"></i>
+                <span>Next.js</span>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span>Node JS</span>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-postgresql-plain colored"></i>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-mongodb-plain colored"></i>
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-docker-plain colored"></i>
+                <span>Docker</span>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-git-plain colored"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-github-original"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-card">
+                <i class="devicon-ruby-plain colored"></i>
                 <span>Ruby</span>
-                <span>60%</span>
               </div>
-              <div class="line php"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
+              <div class="skill-card">
+                <i class="devicon-rails-plain colored"></i>
                 <span>Rails</span>
-                <span>70%</span>
               </div>
-              <div class="line mysql"></div>
+              <div class="skill-card">
+                <i class="fas fa-robot skill-icon-ai"></i>
+                <span>AI Engineering</span>
+              </div>
+              <div class="skill-card">
+                <i class="fas fa-brain skill-icon-rag"></i>
+                <span>RAG</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <a id="myTeam"></a>
-    <!--teams section-->
-    <section class="team" id="team">
+    <a id="projects"></a>
+    <!--projects section-->
+    <section class="projects" id="projects">
       <div class="max-width">
-        <h2 class="title">My Team</h2>
-        <div class="carousel owl-carousel">
-          <div class="card">
-            <div class="box">
-              <img src="./assets/images/Bg2.jpg" alt="" />
-              <div class="text">Djoekaeff Francis</div>
-              <p>
-                Editor Sea life production works with me to make the videos
-                seamless
-              </p>
-            </div>
+        <h2 class="title">My Projects</h2>
+        <div class="projects-group-label">Work Projects</div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+            <div class="project-title">Zawa Africa</div>
+            <div class="project-tech">E-Commerce Platform</div>
+            <a href="https://zawa.africa/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
           </div>
-          <div class="card">
-            <div class="box">
-              <img src="./assets/images/luanne.jpg" alt="" />
-              <div class="text">Mike Timothy</div>
-              <p>
-                Script writer Sea-life production gives the stories that we
-                shoot
-              </p>
-            </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-star"></i></div>
+            <div class="project-title">Zolatap</div>
+            <div class="project-tech">Experience Management System</div>
+            <a href="https://zolatap.com/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            <div class="project-title">The Lord's Hands</div>
+            <div class="project-tech">Goodwill System</div>
+            <a href="https://thelordshands.org/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="project-title">My Career Path</div>
+            <div class="project-tech">Career Ready Platform</div>
+            <a href="https://mycareerpath.app/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+          </div>
+        </div>
+
+        <div class="projects-group-label">Personal Projects</div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-icon"><i class="fab fa-youtube"></i></div>
+            <div class="project-title">YouTube Clone</div>
+            <div class="project-tech">React JS</div>
+            <a href="https://you-tube-clone-ezra-code.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-search-location"></i></div>
+            <div class="project-title">Lost & Found System</div>
+            <div class="project-tech">HTML · CSS</div>
+            <a href="https://eliazaragwaya.github.io/Lost_and_found_Recovery_System/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-globe-africa"></i></div>
+            <div class="project-title">Ghanaian Name Generator</div>
+            <div class="project-tech">HTML · CSS · JavaScript</div>
+            <a href="https://ezra-code.github.io/Ghanaian-name/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-calculator"></i></div>
+            <div class="project-title">Tip Calculator</div>
+            <div class="project-tech">HTML · CSS · JavaScript</div>
+            <a href="https://ezra-code.github.io/tip-calculator/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-id-card"></i></div>
+            <div class="project-title">Business Card</div>
+            <div class="project-tech">HTML · CSS</div>
+            <a href="https://profound-haupia-a5e6ce.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-dice"></i></div>
+            <div class="project-title">Tenzies Game</div>
+            <div class="project-tech">React JS · CSS</div>
+            <a href="https://magenta-druid-dd009f.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-language"></i></div>
+            <div class="project-title">Pollyglot — Language Translator</div>
+            <div class="project-tech">HTML · CSS · JS · Express · Claude AI</div>
+            <a href="https://superb-sprinkles-93d748.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-utensils"></i></div>
+            <div class="project-title">Recipe Generator</div>
+            <div class="project-tech">React JS · Express JS · OpenAI</div>
+            <a href="https://chef-claude-six-gules.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+          </div>
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-skull-crossbones"></i></div>
+            <div class="project-title">Assembly Endgame</div>
+            <div class="project-tech">React JS · Vite · clsx · react-confetti</div>
+            <a href="https://capstone-endgame.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
           </div>
         </div>
       </div>
@@ -226,11 +328,9 @@
         <div class="contact-content">
           <div class="column left">
             <div class="text">Get in Touch</div>
-            <p>
-             Contact me so we can transform your dream into a reality.
-            </p>
-           <div class="icons">
-            <div class="row">
+            <p>Contact me so we can transform your dream into a reality.</p>
+            <div class="icons">
+              <div class="row">
                 <i class="fas fa-user"></i>
                 <div class="info">
                   <div class="head">Name</div>
@@ -251,28 +351,33 @@
                   <div class="sub-title">njerukithinji872@gmail.com</div>
                 </div>
               </div>
-           </div>
+            </div>
           </div>
           <div class="column right">
             <div class="text">Message me</div>
             <form action="#">
-                <div class="fields">
-                    <div class="field name">
-                        <input type="text" placeholder="Name" required>
-                    </div>
-                    <div class="field email">
-                        <input type="email" placeholder="Email" required>
-                    </div>
+              <div class="fields">
+                <div class="field name">
+                  <input type="text" placeholder="Name" required />
                 </div>
-                <div class="field">
-                    <input type="text" placeholder="Subject" required>
+                <div class="field email">
+                  <input type="email" placeholder="Email" required />
                 </div>
-                <div class="field textarea">
-                    <textarea cols="30" rows="10" placeholder="Describe project..." required></textarea>
-                </div>
-                <div class="button">
-                    <button type="submit"> Send Message</button>
-                </div>
+              </div>
+              <div class="field">
+                <input type="text" placeholder="Subject" required />
+              </div>
+              <div class="field textarea">
+                <textarea
+                  cols="30"
+                  rows="10"
+                  placeholder="Describe project..."
+                  required
+                ></textarea>
+              </div>
+              <div class="button">
+                <button type="submit">Send Message</button>
+              </div>
             </form>
           </div>
         </div>
@@ -280,9 +385,12 @@
     </section>
 
     <!-- footer -->
-<footer>
-    <span>Created By <a href="">Ezra Njeru</a> | <span class="far fa-copyright"></span> 2023 All rights reserved</span>
-</footer>
+    <footer>
+      <span
+        >Created By <a href="">Ezra Njeru</a> |
+        <span class="far fa-copyright"></span> <span id="footer-year"></span> All rights reserved</span
+      >
+    </footer>
     <script src="./assets/scripts/script.js"></script>
   </body>
 </html>
